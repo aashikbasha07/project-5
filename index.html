@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        /* Gallery Item */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        /* Image */
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Caption */
+        .caption {
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .caption {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Photo Gallery</h1>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://picsum.photos/300/200?random=1" alt="Photo 1">
+            <div class="caption">Beautiful Landscape 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/300/200?random=2" alt="Photo 2">
+            <div class="caption">Beautiful Landscape 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/300/200?random=3" alt="Photo 3">
+            <div class="caption">Beautiful Landscape 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/300/200?random=4" alt="Photo 4">
+            <div class="caption">Beautiful Landscape 4</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/300/200?random=5" alt="Photo 5">
+            <div class="caption">Beautiful Landscape 5</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://picsum.photos/300/200?random=6" alt="Photo 6">
+            <div class="caption">Beautiful Landscape 6</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
