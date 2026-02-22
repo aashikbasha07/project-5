@@ -63,4 +63,6 @@ Use CSS transitions to add hover effects for a modern look.
 📜 License
 
 This project is open-source and available under the MIT License
+output:
+https://aashikbasha07.github.io/project-5/
 .
